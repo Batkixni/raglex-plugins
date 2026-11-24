@@ -1,0 +1,36 @@
+name: Validate Plugin PR & Build Registry
+
+on:
+  pull_request:
+    paths:
+      - 'plugins/**'
+  push:
+    branches: [main]
+    paths:
+      - 'plugins/**'
+
+permissions:
+  contents: write
+
+jobs:
+  validate-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.23'
+
+      - name: Validate every plugin.json & verify remote SHA-256
+        run: go run ./scripts/build_registry.go -verify-download -out registry.json
+
+      - name: Commit updated registry.json on main
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          git config user.name "raglex-bot"
+          git config user.email "bot@raglex.app"
+          if ! git diff --quiet registry.json; then
+            git add registry.json
+            git commit -m "chore(registry): rebuild registry.json"
+            git push
+          fi

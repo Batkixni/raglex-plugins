@@ -1,0 +1,16 @@
+{
+  "id": "raglex.duplicate-finder",
+  "name": "Smart Duplicate Finder",
+  "version": "1.0.1",
+  "author": "Raglex Official",
+  "description": "Scan your library for potential duplicate assets by filename and dimensions, automatically tagging matches with #Duplicate-Review for quick cleanup.",
+  "icon": "duplicate",
+  "accent": "#A855F7",
+  "category": "utility",
+  "repository": "https://github.com/Batkixni/Raglex/blob/main/docs/PLUGIN_SDK.md",
+  "min_raglex_version": "0.3.3",
+  "hooks": ["library_action"],
+  "permissions": ["read_library", "write_tags"],
+  "official": true,
+  "builtin": true
+}

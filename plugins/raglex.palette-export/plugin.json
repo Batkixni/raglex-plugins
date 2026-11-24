@@ -1,0 +1,16 @@
+{
+  "id": "raglex.palette-export",
+  "name": "Color Palette Exporter (CSS / JSON)",
+  "version": "0.2.1",
+  "author": "Raglex Official",
+  "description": "Export dominant color palettes from selected assets as CSS custom properties (:root) and design tokens ready to paste into frontend projects.",
+  "icon": "palette",
+  "accent": "#10B981",
+  "category": "export",
+  "repository": "https://github.com/Batkixni/Raglex/blob/main/docs/PLUGIN_SDK.md",
+  "min_raglex_version": "0.2.1",
+  "hooks": ["context_menu", "batch_action"],
+  "permissions": ["read_library", "disk"],
+  "official": true,
+  "builtin": true
+}

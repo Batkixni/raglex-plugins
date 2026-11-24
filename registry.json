@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-24T13:00:28Z",
+  "plugins": [
+    {
+      "id": "raglex.auto-aspect-tagger",
+      "name": "Auto Aspect Ratio \u0026 Resolution Tagger",
+      "version": "0.2.1",
+      "author": "Raglex Official",
+      "description": "Automatically tag images by orientation and resolution (Portrait, Landscape, Square, Ultrawide, 4K+).",
+      "icon": "crop",
+      "accent": "#F59E0B",
+      "category": "utility",
+      "repository": "https://github.com/Batkixni/Raglex/blob/main/docs/PLUGIN_SDK.md",
+      "min_raglex_version": "0.2.1",
+      "hooks": [
+        "context_menu",
+        "batch_action"
+      ],
+      "permissions": [
+        "read_library",
+        "write_tags"
+      ],
+      "official": true,
+      "builtin": true
+    },
+    {
+      "id": "raglex.duplicate-finder",
+      "name": "Smart Duplicate Finder",
+      "version": "1.0.1",
+      "author": "Raglex Official",
+      "description": "Scan your library for potential duplicate assets by filename and dimensions, automatically tagging matches with #Duplicate-Review for quick cleanup.",
+      "icon": "duplicate",
+      "accent": "#A855F7",
+      "category": "utility",
+      "repository": "https://github.com/Batkixni/Raglex/blob/main/docs/PLUGIN_SDK.md",
+      "min_raglex_version": "0.3.3",
+      "hooks": [
+        "library_action"
+      ],
+      "permissions": [
+        "read_library",
+        "write_tags"
+      ],
+      "official": true,
+      "builtin": true
+    },
+    {
+      "id": "raglex.library-migrator",
+      "name": "Eagle Import",
+      "version": "1.1.1",
+      "author": "Raglex Official",
+      "description": "Import Eagle .library folders or .eaglepack archives into Raglex, restoring nested folders and colors while preserving tags, star ratings, notes, and source URLs.",
+      "icon": "import",
+      "accent": "#FF5C33",
+      "category": "import",
+      "repository": "https://github.com/Batkixni/Raglex/blob/main/docs/PLUGIN_SDK.md",
+      "min_raglex_version": "0.3.3",
+      "hooks": [
+        "importer",
+        "library_action"
+      ],
+      "permissions": [
+        "read_library",
+        "write_tags",
+        "disk"
+      ],
+      "official": true,
+      "builtin": true
+    },
+    {
+      "id": "raglex.markdown-notes",
+      "name": "Markdown Notes \u0026 Moodboard Brief",
+      "version": "0.3.1",
+      "author": "Raglex Official",
+      "description": "Preview and edit .md notes natively inside Raglex with a borderless writing desk, and export selected reference assets into a structured Markdown brief.",
+      "icon": "markdown",
+      "accent": "#38BDF8",
+      "category": "preview",
+      "repository": "https://github.com/Batkixni/Raglex/blob/main/docs/PLUGIN_SDK.md",
+      "min_raglex_version": "0.2.1",
+      "hooks": [
+        "preview_renderer",
+        "context_menu",
+        "batch_action"
+      ],
+      "permissions": [
+        "read_library",
+        "disk"
+      ],
+      "official": true,
+      "builtin": true
+    },
+    {
+      "id": "raglex.palette-export",
+      "name": "Color Palette Exporter (CSS / JSON)",
+      "version": "0.2.1",
+      "author": "Raglex Official",
+      "description": "Export dominant color palettes from selected assets as CSS custom properties (:root) and design tokens ready to paste into frontend projects.",
+      "icon": "palette",
+      "accent": "#10B981",
+      "category": "export",
+      "repository": "https://github.com/Batkixni/Raglex/blob/main/docs/PLUGIN_SDK.md",
+      "min_raglex_version": "0.2.1",
+      "hooks": [
+        "context_menu",
+        "batch_action"
+      ],
+      "permissions": [
+        "read_library",
+        "disk"
+      ],
+      "official": true,
+      "builtin": true
+    }
+  ]
+}

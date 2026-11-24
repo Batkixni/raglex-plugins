@@ -1,0 +1,16 @@
+{
+  "id": "raglex.library-migrator",
+  "name": "Eagle Import",
+  "version": "1.1.1",
+  "author": "Raglex Official",
+  "description": "Import Eagle .library folders or .eaglepack archives into Raglex, restoring nested folders and colors while preserving tags, star ratings, notes, and source URLs.",
+  "icon": "import",
+  "accent": "#FF5C33",
+  "category": "import",
+  "repository": "https://github.com/Batkixni/Raglex/blob/main/docs/PLUGIN_SDK.md",
+  "min_raglex_version": "0.3.3",
+  "hooks": ["importer", "library_action"],
+  "permissions": ["read_library", "write_tags", "disk"],
+  "official": true,
+  "builtin": true
+}

@@ -1,0 +1,16 @@
+{
+  "id": "raglex.auto-aspect-tagger",
+  "name": "Auto Aspect Ratio & Resolution Tagger",
+  "version": "0.2.1",
+  "author": "Raglex Official",
+  "description": "Automatically tag images by orientation and resolution (Portrait, Landscape, Square, Ultrawide, 4K+).",
+  "icon": "crop",
+  "accent": "#F59E0B",
+  "category": "utility",
+  "repository": "https://github.com/Batkixni/Raglex/blob/main/docs/PLUGIN_SDK.md",
+  "min_raglex_version": "0.2.1",
+  "hooks": ["context_menu", "batch_action"],
+  "permissions": ["read_library", "write_tags"],
+  "official": true,
+  "builtin": true
+}

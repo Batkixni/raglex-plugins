@@ -1,0 +1,16 @@
+{
+  "id": "raglex.markdown-notes",
+  "name": "Markdown Notes & Moodboard Brief",
+  "version": "0.3.1",
+  "author": "Raglex Official",
+  "description": "Preview and edit .md notes natively inside Raglex with a borderless writing desk, and export selected reference assets into a structured Markdown brief.",
+  "icon": "markdown",
+  "accent": "#38BDF8",
+  "category": "preview",
+  "repository": "https://github.com/Batkixni/Raglex/blob/main/docs/PLUGIN_SDK.md",
+  "min_raglex_version": "0.2.1",
+  "hooks": ["preview_renderer", "context_menu", "batch_action"],
+  "permissions": ["read_library", "disk"],
+  "official": true,
+  "builtin": true
+}
